@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "fd7fd216-22dd-4fd6-b7cd-8f9c4556e0b8",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3030/authentication/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"local\",\n  \"status\": \"studio\",\n  \"password\": \"secret\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3030/authentication/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"authentication",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3030/users/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"studio\",\r\n  \"password\": \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3030/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3030/jobs/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"job 8\",\r\n        \"source\": \"test\",\r\n        \"site\": \"locahost\",\r\n        \"campagne\": \"no campaign\",\r\n        \"dateCommande\": \"23/03/2018\",\r\n        \"dateProd\": \"23/03/2018\",\r\n        \"dateDelivery\": \"23/03/2018\",\r\n        \"dateExpedition\": \"23/03/2018\",\r\n        \"client\": \"client imaginaire\",\r\n        \"graphiste\": \"nom graphiste\",\r\n        \"formatFini\": \"test format (A4 etc...)\",\r\n        \"quantity\": 3000,\r\n        \"codeCiscom\": \"156548\",\r\n        \"status\": \"En attente de validation\"\r\n\t\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3030/jobs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"jobs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3030/jobs/5ab4ddef64ff2b35988671e3",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"En attente de validation\",\n    \"name\": \"job 1\",\n    \"source\": \"test\",\n    \"site\": \"locahost\",\n    \"campagne\": \"no campaign\",\n    \"dateCommande\": \"23/03/2018\",\n    \"dateProd\": \"23/03/2018\",\n    \"dateDelivery\": \"23/03/2018\",\n    \"dateExpedition\": \"23/03/2018\",\n    \"client\": \"client imaginaire\",\n    \"graphiste\": \"nom graphiste\",\n    \"formatFini\": \"test format (A4 etc...)\",\n    \"quantity\": 3000,\n    \"codeCiscom\": \"156548\",\n    \"createdAt\": \"2018-03-23T10:58:55.330Z\",\n    \"updatedAt\": \"2018-03-23T10:58:55.330Z\",\n    \"__v\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3030/jobs/5ab502d3feba164148552fd8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"jobs",
+						"5ab502d3feba164148552fd8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

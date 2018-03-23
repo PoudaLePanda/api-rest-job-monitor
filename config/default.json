@@ -6,8 +6,8 @@
         "default": 10,
         "max": 50
     },
-    "mongodb": "mongodb://192.168.10.234:27017/api_rest_job_monitor",
-    // "mongodb": "mongodb://192.168.10.220:27017/api_rest_job_monitor",
+    // "mongodb": "mongodb://192.168.10.234:27017/api_rest_job_monitor",
+    "mongodb": "mongodb://192.168.10.220:27017/api_rest_job_monitor",
     "authentication": {
         "secret": "a028291f7eb3461b17eb169d2919e856872a8184d8f99d5c241ac151700e5991392c9f12dc834e022ac8cf41955cb69c598fd3c9f07b6e819d058aab778478f0f4e71b602296bc8d20e5a99fc43d28f4e973aab5d59d82140ac75eb2cc9825ff585b588217a51ac63b4ef665188dd645e4b1556421c3e371f3c758ebbadad9803d20aa35b896df21444d1985cd3e631716d925f774ec4b38164dac3bbd43f8e49cd56a59f99a66e748563c26a0dac460074ec776b6de989b61b2f4d3b6dc6fac666f159444b40d060c7d3ed1ed0b7f64c447949bc78c7f7b1bec5c5af0194f0db1e7997f14d3b7a5df4334326c14d334685906a7af047ea5b44fce543046b4ea",
         "strategies": [
